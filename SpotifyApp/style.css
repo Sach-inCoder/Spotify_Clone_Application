@@ -1,0 +1,463 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body
+{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+.container
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	height: calc(100vh - 20px);
+	background: linear-gradient(-45deg,#212121,#7c00c9);
+	overflow-y: auto;
+	border-radius: 20px;
+	padding-bottom: 150px;
+}
+.container::-webkit-scrollbar
+{
+	display: none;
+}
+
+.container .header
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container .header .setting
+{
+	padding:10px;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+.container .greeting
+{
+	position: relative;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	padding: 10px;
+}
+.container .greeting .greet
+{
+	position: relative;
+	font-size: 1.25em;
+	color: #fff;
+	font-weight: 700;
+}
+
+.greeting .songs
+{
+	position: relative;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+.greeting .songs .song
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.song .imgBx
+{
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+.song.liked .imgBx
+{
+	background: linear-gradient(-45deg,#fff,#6600ff);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+.song .imgBx img
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.song .label
+{
+	color: #fff;
+	padding-left: 5px;
+	font-size: 0.9em;
+}
+
+.content
+{
+	position: relative;
+	padding: 10px;
+}
+.content h3
+{
+	color: #fff;
+	margin-bottom: 10px;
+}
+.content .boxList
+{
+	position: relative;
+	display: flex;
+	gap: 10px;
+	overflow-x: scroll;
+}
+.content .boxList::-webkit-scrollbar
+{
+	display: none;
+}
+.content .boxList .box
+{
+	position: relative;
+	min-width: 150px;
+	height: 150px;
+	cursor: pointer;
+}
+.boxList .box .icon
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	color: #fff;
+}
+.boxList .box .imgBx
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-bottom: 5px solid var(--clr);
+}
+.box img
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.boxList .box .categary
+{
+	position: absolute;
+	padding-left: 10px;
+	color: #fff;
+	top: 110px;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	border-left: 5px solid var(--clr);
+}
+
+.boxList.charts .box .categary
+{
+	position: absolute;
+	background:	rgba(255, 255, 255, 0.5);
+	clip-path: polygon(0 0, 110% 0, 110% 30%, 0 20%);
+	padding: 1px 5px 0 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-shadow: none;
+	text-align: right;
+	border-left: none;
+	color: black;
+	font-size: 1.15em;
+	font-weight: 900;
+}
+.boxList.charts .box .icon
+{
+	top: 5px;
+	left: 5px;
+	color: black;
+}
+
+.boxList.trand .box
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: var(--clr);
+}
+.boxList.trand .box .top
+{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.boxList.trand .box .top span
+{
+	font-size: 0.5em;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	margin-top: 15px;
+	padding-top: 15px;
+	letter-spacing: 0.25em;
+}
+
+.container .navigator
+{
+	position: fixed;
+	bottom: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	width: 350px;
+	height: 60px;
+	border-top: 2px solid #000;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background: #212121;
+	z-index: 100;
+
+}
+.navigator .icon
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height:45px;
+}
+.navigator .icon a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1.5em;
+}
+.navigator .icon a.active,
+.navigator .icon:hover a
+{
+	color: rgba(255, 255, 255, 1);
+}
+
+.container .player
+{
+	position: fixed;
+	display: flex;
+	width: 350px;
+	height: 60px;
+	bottom: 69px;
+	background: #212121;
+	z-index: 100;
+}
+.player .imgBx
+{
+	position: relative;
+	width: 60px;
+	height: 60px;
+}
+.player .imgBx img
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.player .data
+{
+	position: relative;
+	display: flex;
+	padding-left: 10px;
+	height: 60px;
+	align-items: center;
+	cursor: pointer;
+}
+.player .data div
+{
+	color: #fff;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+.player .data div.singerName
+{
+	position: relative;
+	padding-left: 5px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 7.5px;
+}
+.player .data div.singerName:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	background: rgba(255, 255, 255, 0.5);
+}
+.player .buttons
+{
+	position: absolute;
+	right: 0;
+	display: flex;
+}
+.player .buttons .btn
+{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.player .buttons .btn i
+{
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+.player .buttons .likeBtn i
+{
+	color: rgba(255, 255, 255, 0.5);
+}
+.player .buttons .likeBtn.active i
+{
+	color: #0f0;
+}
+.player .progress
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+}
+.player .progress span
+{
+	position: absolute;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background: #0f0;
+	border-top-right-radius: 1.5px;
+	border-bottom-right-radius: 1.5px;
+}
+.musicPlayer
+{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	bottom: -100%;
+	width: 350px;
+	background: rgba(0, 0, 0, 0.7);
+	backdrop-filter: blur(5px);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition: 0.5s;
+	z-index: 101;
+}
+.musicPlayer .head
+{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	justify-content: space-between;
+}
+.head .icon
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+.head .title
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.musicPlayer .coverBx
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+}
+.musicPlayer .coverBx img
+{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+.musicPlayer .songName
+{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5em;
+}
+.musicPlayer .controls
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	padding-bottom: 30px;
+}
+.musicPlayer .controls .btn
+{
+	color: #fff;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+.musicPlayer .controls .pp
+{
+	font-size: 2em;
+}
+.musicPlayer .bar
+{
+	position: relative;
+	width: 100%;
+	padding: 0 20px;
+}
+.musicPlayer .bar input
+{
+	position: relative;
+	width: 100%;
+	color: #0f0;
+}

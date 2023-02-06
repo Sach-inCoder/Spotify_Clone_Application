@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spotify Application Clone</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+
+	<div class="header">
+		<div class="setting">
+			<div class="icon">
+				<i class="fa-solid fa-gear"></i>
+			</div>
+		</div>
+	</div>
+
+	<div class="greeting">
+		<div class="greet">
+			Good afternoon
+		</div>
+		<div class="songs">
+			<div class="song liked">
+				<div class="imgBx">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="label">Liked Songs</div>
+			</div>
+			<div class="song follewdList">
+				<div class="imgBx">
+					<img src="images/phonk.jpg" alt="no photo">
+				</div>
+				<div class="label">PHONK 😈 VILLAIN</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<h3>Your top mixes</h3>
+		<div class="boxList">
+			<div class="box" style="--clr:#f00;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/moodymix.webp">
+				</div>
+				<div class="categary">
+					Moody Mix
+				</div>
+			</div>
+			<div class="box" style="--clr:#0f9;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/happymix.jpg">
+				</div>
+				<div class="categary">
+					Happy Mix
+				</div>
+			</div>
+			<div class="box" style="--clr:#00f;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/avamix.jpg">
+				</div>
+				<div class="categary">
+					Ava Max Mix
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<h3>Charts</h3>
+		<div class="boxList charts">
+			<div class="box" style="--clr:#f00;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/hindi.jpg">
+				</div>
+				<div class="categary">
+					Hindi
+				</div>
+			</div>
+			<div class="box" style="--clr:#0f9;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/tamil.jpg">
+				</div>
+				<div class="categary">
+					Tamil
+				</div>
+			</div>
+			<div class="box" style="--clr:#00f;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/punjabi.jpg">
+				</div>
+				<div class="categary">
+					Punjabi
+				</div>
+			</div>
+			<div class="box" style="--clr:#f0f;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="imgBx">
+					<img src="images/english.webp">
+				</div>
+				<div class="categary">
+					English
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<h3>Tranding</h3>
+		<div class="boxList trand">
+			<div class="box" style="--clr:#215d6e;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="top">
+					Top 50<br>
+					<span>INDIA</span>
+				</div>
+			</div>
+			<div class="box" style="--clr:#089f8f;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="top">
+					Top 50<br>
+					<span>GLOBAL</span>
+				</div>
+			</div>
+			<div class="box" style="--clr:#00898a;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="top">
+					Top 50<br>
+					<span>ENGLISH</span>
+				</div>
+			</div>
+			<div class="box" style="--clr:#08737f;">
+				<div class="icon">
+					<i class="fa-brands fa-spotify"></i>
+				</div>
+				<div class="top">
+					Top 50<br>
+					<span>BOLLYWOOD</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="navigator">
+		<div class="icon">
+			<a href="#" class="active">
+				<i class="fa-solid fa-house"></i>
+			</a>
+		</div>
+		<div class="icon">
+			<a href="#">
+				<i class="fa-solid fa-magnifying-glass"></i>
+			</a>
+		</div>
+		<div class="icon">
+			<a href="#">
+				<i class="fa-solid fa-chart-simple"></i>
+			</a>
+		</div>
+	</div>
+	
+	<div class="player">
+		<div class="plrImg imgBx">
+			<img src="cover/c1.avif">
+		</div>
+		<div class="data">
+			<div class="songName plrSongName">Bad Boyz</div>
+			<div class="singerName">unknown</div>
+		</div>
+		<div class="buttons">
+			<div class="btn likeBtn" title="Like">
+				<i class="fa-solid fa-heart"></i>
+			</div>
+			<div class="btn playPauseBtn" title="action">
+				<i class="play fa-solid fa-play"></i>
+			</div>
+		</div>
+		<div class="progress">
+			<span></span>
+		</div>
+	</div>
+
+	<div class="musicPlayer">
+		<div class="head">
+			<div class="icon closeBtn">
+				<i class="fa-solid fa-chevron-down"></i>
+			</div>
+			<div class="title">Playing From Your Library</div>
+			<div class="icon optionBTN">
+				<i class="fa-solid fa-ellipsis-vertical"></i>
+			</div>
+		</div>
+		<div class="coverBx">
+			<img src="cover/c1.avif">
+		</div>
+		<div class="songName musicSongName">
+			Bad Boy
+		</div>
+		<div class="bar">
+			<input class="myProgressBar" type="range" name="" max="100" min="0" value="0">
+		</div>
+		<div class="controls">
+			<div class="btn prv">
+				<i class="fa-solid fa-backward-step"></i>
+			</div>
+			<div class="btn pp">
+				<i class="play fa-solid fa-play"></i>
+			</div>
+			<div class="btn nxt">
+				<i class="fa-solid fa-forward-step"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	// Greeting JS
+	let greet = document.querySelector('.greet');
+	let time = new Date().getHours();
+
+	if (time < 12){
+		greet.innerText="Good Morning";
+	}
+	else if(time < 16 && time > 12){
+		greet.innerText="Good Afternoon";
+	}
+	else{
+		greet.innerText="Good Evening";
+	}
+
+	// Like/Dislike Js
+
+	let like = document.querySelector('.likeBtn');
+	like.onclick = function() {
+		like.classList.toggle('active');
+	}
+
+
+	// Songs List
+	console.log("welcome");
+	// Neede Variables
+
+	let audioEle = new Audio('Songs/a1.mp3');
+	let PlayPause = document.querySelector('.playPauseBtn i');
+	let pp = document.querySelector('.pp i');
+	let SongPanel = document.querySelector('.data');
+	let musicPlayer = document.querySelector('.musicPlayer');
+	let closeMusicPlayer = document.querySelector('.closeBtn');
+	let progress = document.querySelector('.progress span');
+	let myProgressBar = document.querySelector('.myProgressBar');
+	let prvBtn = document.querySelector('.prv i');
+	let nxtBtn = document.querySelector('.nxt i');
+	let cvrImg = document.querySelector('.coverBx img');
+	let plrImg = document.querySelector('.plrImg img');
+	let plrSongName = document.querySelector('.plrSongName');
+	let musicSongName = document.querySelector('.musicSongName');
+
+
+	SongPanel.onclick = function(){
+		musicPlayer.style.bottom = "10px";
+	}
+
+	closeMusicPlayer.onclick = function(){
+		musicPlayer.style.bottom = "-100%";
+	}
+
+
+	// Play & Pause function
+	pp.onclick = function(){
+		PlayPause.onclick();
+	}
+	PlayPause.onclick = function() {
+		if(audioEle.paused || audioEle.currentTime<=0){
+			audioEle.play();
+			PlayPause.classList.add('fa-pause');
+			PlayPause.classList.remove('fa-play');
+			pp.classList.add('fa-pause');
+			pp.classList.remove('fa-play');
+		}
+		else{
+			audioEle.pause();
+			PlayPause.classList.add('fa-play');
+			PlayPause.classList.remove('fa-pause');
+			pp.classList.add('fa-play');
+			pp.classList.remove('fa-pause');
+		}
+	}
+
+
+	// Song list source
+	let songIndex = 0;  
+	let songs = [
+		{
+			songName : "Bad Boys",
+			filePath : "Songs/a1.mp3",
+			coverPath : "cover/c1.avif"
+		},
+		{
+			songName : "Dont Let me down", 
+			filePath : "Songs/a2.mp3", 
+			coverPath : "cover/c2.jpg"
+		},
+		{
+			songName : "Pyaar", 
+			filePath : "Songs/a3.mp3", 
+			coverPath : "cover/c3.jpg"
+		},
+		{
+			songName : "Burn it Down", 
+			filePath : "Songs/a4.mp3", 
+			coverPath : "cover/c4.jpg"
+		},
+		{
+			songName : "New Song", 
+			filePath : "Songs/a5.mp3", 
+			coverPath : "cover/c5.jpg"
+		},
+		{
+			songName : "The usos", 
+			filePath : "Songs/a6.mp3", 
+			coverPath : "cover/c6.jpg"
+		}
+	];
+
+	const nxtSong = () =>{
+		songIndex = (songIndex + 1) % songs.length;
+		audioEle.src = songs[songIndex].filePath;
+		plrImg.src = songs[songIndex].coverPath;
+		cvrImg.src = songs[songIndex].coverPath;
+		plrSongName.innerText = songs[songIndex].songName;
+		musicSongName.innerText = songs[songIndex].songName;
+		PlayPause.onclick();
+	}
+	const prvSong = () =>{
+		songIndex = (songIndex - 1 + songs.length) % songs.length;
+		audioEle.src = songs[songIndex].filePath;
+		plrImg.src = songs[songIndex].coverPath;
+		cvrImg.src = songs[songIndex].coverPath;
+		plrSongName.innerText = songs[songIndex].songName;
+		musicSongName.innerText = songs[songIndex].songName;
+		PlayPause.onclick();
+	}
+
+	nxtBtn.addEventListener('click',nxtSong);
+	prvBtn.addEventListener('click',prvSong);
+
+	// Progress Bar function
+	audioEle.addEventListener('timeupdate',()=>{
+		let songBar = parseInt((audioEle.currentTime/audioEle.duration)*100);
+		myProgressBar.value = songBar;
+		progress.style.width=songBar+"%";
+	});
+
+	myProgressBar.addEventListener('change',()=>{
+		audioEle.currentTime = myProgressBar.value * audioEle.duration/100;
+	})
+
+</script>
+
+</body>
+</html>
